@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306A032027F5F0DE009AA309 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306A031F27F5F0DE009AA309 /* ItemData.swift */; };
 		30D284D327F5390A00E19A7E /* Random_GeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D284D227F5390A00E19A7E /* Random_GeneratorApp.swift */; };
-		30D284D527F5390A00E19A7E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D284D427F5390A00E19A7E /* ContentView.swift */; };
+		30D284D527F5390A00E19A7E /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D284D427F5390A00E19A7E /* CategoriesView.swift */; };
 		30D284D727F5393000E19A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D284D627F5393000E19A7E /* Assets.xcassets */; };
 		30D284DA27F5393000E19A7E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30D284D927F5393000E19A7E /* Preview Assets.xcassets */; };
 		30D284E427F5393500E19A7E /* Random_GeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D284E327F5393500E19A7E /* Random_GeneratorTests.swift */; };
 		30D284EE27F5393500E19A7E /* Random_GeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D284ED27F5393500E19A7E /* Random_GeneratorUITests.swift */; };
 		30D284F027F5393500E19A7E /* Random_GeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D284EF27F5393500E19A7E /* Random_GeneratorUITestsLaunchTests.swift */; };
+		30D3076C27F5E32100457426 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D3076B27F5E32100457426 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		306A031F27F5F0DE009AA309 /* ItemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 		30D284CF27F5390A00E19A7E /* Random Generator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Random Generator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D284D227F5390A00E19A7E /* Random_GeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_GeneratorApp.swift; sourceTree = "<group>"; };
-		30D284D427F5390A00E19A7E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		30D284D427F5390A00E19A7E /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		30D284D627F5393000E19A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30D284D927F5393000E19A7E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30D284DF27F5393500E19A7E /* Random GeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Random GeneratorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,7 @@
 		30D284E927F5393500E19A7E /* Random GeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Random GeneratorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30D284ED27F5393500E19A7E /* Random_GeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_GeneratorUITests.swift; sourceTree = "<group>"; };
 		30D284EF27F5393500E19A7E /* Random_GeneratorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_GeneratorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30D3076B27F5E32100457426 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306A031E27F5F0BE009AA309 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				306A031F27F5F0DE009AA309 /* ItemData.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		30D284C627F5390A00E19A7E = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +106,10 @@
 		30D284D127F5390A00E19A7E /* Random Generator */ = {
 			isa = PBXGroup;
 			children = (
+				306A031E27F5F0BE009AA309 /* ViewModels */,
+				30D3076827F5549500457426 /* Models */,
+				30D3076727F553F100457426 /* Views */,
 				30D284D227F5390A00E19A7E /* Random_GeneratorApp.swift */,
-				30D284D427F5390A00E19A7E /* ContentView.swift */,
 				30D284D627F5393000E19A7E /* Assets.xcassets */,
 				30D284D827F5393000E19A7E /* Preview Content */,
 			);
@@ -125,6 +139,22 @@
 				30D284EF27F5393500E19A7E /* Random_GeneratorUITestsLaunchTests.swift */,
 			);
 			path = "Random GeneratorUITests";
+			sourceTree = "<group>";
+		};
+		30D3076727F553F100457426 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30D284D427F5390A00E19A7E /* CategoriesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30D3076827F5549500457426 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30D3076B27F5E32100457426 /* Item.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D284D527F5390A00E19A7E /* ContentView.swift in Sources */,
+				30D284D527F5390A00E19A7E /* CategoriesView.swift in Sources */,
+				30D3076C27F5E32100457426 /* Item.swift in Sources */,
+				306A032027F5F0DE009AA309 /* ItemData.swift in Sources */,
 				30D284D327F5390A00E19A7E /* Random_GeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -476,7 +508,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4SL6V74767;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "LSGaming.Random-GeneratorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +528,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4SL6V74767;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "LSGaming.Random-GeneratorTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

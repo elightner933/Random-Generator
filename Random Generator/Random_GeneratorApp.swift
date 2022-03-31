@@ -11,7 +11,7 @@ import SwiftUI
 struct Random_GeneratorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CategoriesView()
         }
     }
 }
